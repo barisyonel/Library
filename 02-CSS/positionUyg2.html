@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyg</title>
+    <style>
+        body{
+            background: #1c1c1c;
+            color: whitesmoke;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            margin: 100px auto;
+        }
+        .container span{
+            font-size: 30px;
+            font-family: monospace;
+            display: block;
+            text-align: center;
+            width: 150px;
+            position: absolute;
+            z-index: 2;
+            left: 70%;
+            transform: rotate(25deg);
+        }
+        .container img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: .8;
+            border-radius: 16% 84% 33% 67% / 33% 30% 70% 67% ;
+        }
+        .container video{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 16% 84% 33% 67% / 33% 30% 70% 67% ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>I'm Developer</span>
+        <img src="https://cdn.pixabay.com/photo/2024/03/18/10/51/ai-generated-8640900_1280.jpg" alt="developer">
+        <video loop autoplay muted src="https://cdn.pixabay.com/video/2022/02/11/107468-678258885_large.mp4"></video>
+    </div>
+</body>
+</html>

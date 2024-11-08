@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div,body{
+            transition: .7s;
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        div{
+            border: 2px solid darkblue;
+            border-radius: 5px;
+            padding: 5px;
+            width: 80%;
+            height: 110px;
+            font-size: 14px;
+        }
+        /* Responsive  Mobile-First*/
+        @media (min-width:400px){
+            /* bu pixelin üzerinde geçerli olacak css kodları için yazılır. min-width kullanımında px değerleri küçükten büyüğe doğru sıralanmalıdır!*/
+            body{
+                background-color: black;
+            }
+            div{
+                height: 90px;
+            }
+        }
+        @media (min-width:600px){
+            body{
+                background-color: blueviolet;
+            }
+            div{
+                width: 40%;
+                height: 110px;
+            }
+        }
+        @media (min-width:750px){
+            body{
+                background-color: orangered;
+            }
+            div{
+                width: 30%;
+                height: 125px;
+            }
+            .box-4{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1" style="background-color: lightblue;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam eum voluptates amet. Voluptatibus deleniti, facilis ipsum quae, ea expedita vitae laborum dignissimos autem magnam sapiente. Ea laborum quaerat quae.
+    </div>
+    <div class="box-2" style="background-color: lightcoral;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam eum voluptates amet. Voluptatibus deleniti, facilis ipsum quae, ea expedita vitae laborum dignissimos autem magnam sapiente. Ea laborum quaerat quae.
+    </div>
+    <div class="box-3" style="background-color: lightgoldenrodyellow;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam eum voluptates amet. Voluptatibus deleniti, facilis ipsum quae, ea expedita vitae laborum dignissimos autem magnam sapiente. Ea laborum quaerat quae.
+    </div>
+    <div class="box-4" style="background-color: lightsalmon;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam eum voluptates amet. Voluptatibus deleniti, facilis ipsum quae, ea expedita vitae laborum dignissimos autem magnam sapiente. Ea laborum quaerat quae.
+    </div>
+    <div class="box-5" style="background-color: lightskyblue;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam eum voluptates amet. Voluptatibus deleniti, facilis ipsum quae, ea expedita vitae laborum dignissimos autem magnam sapiente. Ea laborum quaerat quae.
+    </div>
+</body>
+</html>

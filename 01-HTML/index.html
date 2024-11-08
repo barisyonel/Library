@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML INTRO</title>
+    <!-- BootstrapCSS CDN  -->
+    <!-- CustomCSS -->
+</head>
+
+<body>
+    <!-- CTRL + Ö  -->
+    <!-- SEO: Search Engine Optimization -->
+    <!-- SERP: Search Engine Result Page  -->
+    <!-- Heading Tags (h1/h6) -->
+    <!-- Text Formatting Tags -->
+    <p>
+        <b>Lorem ipsum</b> <i>dolor sit amet</i> <strong>consectetur adipisicing</strong> elit. <em>Veritatis
+            nesciunt</em> <ins>sunt voluptatum.</ins> <del>Praesentium impedit,</del> ipsa <mark>vitae reiciendis</mark>
+        <sup> vero et alias</sup> natus ea <sub>vero et alias</sub> sit unde distinctio. E<small>ABC</small>, minus a?
+        H<sub>2</sub>O // e=mc<sup>2</sup>
+        <bdo dir="ltr">BilgeAdam Akademi</bdo>
+        <bdo dir="rtl">BilgeAdam Akademi</bdo>
+    </p>
+    <br>
+    <pre>PreFormatted       
+        Tag</pre>
+    <br>
+    <p>erdem sabri beşik</p>
+    <!-- Blok Level / Inline Level -->
+    <h3 id="bilge">BilgeAdam</h3>
+    <h3>Akademi</h3>
+    <b>Erdem</b>
+    <br>
+    <ins>Sabri</ins>
+    <sup>Beşik</sup>
+    <b>Erdem</b>
+    <ins>Sabri</ins>
+    <sup>Beşik</sup>
+    <hr>
+    <q>Quote"kısa alıntı"</q>
+    <blockquote cite="site">Uzun Alıntı Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, ex in explicabo
+        quia rerum maxime? Laboriosam repellendus repudiandae voluptatem at, voluptas tempora, quos rerum et velit eaque
+        laborum ipsa numquam?</blockquote>
+    <address>Ankara</address>
+    <!-- Semantic(nav,header,section,article,footer,side,figure...) / Non-Semantic(div,span) -->
+    <!-- Anchor Tag(a) -->
+    <p>Google için <a target="_self" href="https://google.com">tıklayınız!</a></p>
+    <p>Google için <a target="_blank" href="https://google.com">tıklayınız!</a></p>
+    <p>Başlangıç için <a href="#">tıklayınız!</a></p>
+    <p>Bilge için <a href="#bilge">tıklayınız!</a></p>
+    <p>test için <a href="test.html">tıklayınız!</a></p>
+    <p>mail için <a href="mailto:erdem@erdem.com">tıklayınız!</a></p>
+    <p>telefon için <a href="tel:+905074896031">tıklayınız!</a></p>
+    <p>wp için <a href="https://wa.me/+905074896031">tıklayınız!</a></p>
+    <img width="250" src="https://cdn.pixabay.com/photo/2023/12/11/12/03/exit-sign-8443453_1280.jpg" alt="exit">
+    <img height="250" src="https://cdn.pixabay.com/photo/2023/12/11/12/03/exit-sign-8443453_1280.jpg" alt="exit">
+    <ul>
+        <!-- Unordered List -->
+        <li>List İtem</li>
+        <li>List İtem</li>
+        <li>List İtem</li>
+        <li>List İtem</li>
+    </ul>
+    <!-- <ol type="1"> -->
+    <!-- <ol type="A"> -->
+    <!-- <ol type="a"> -->
+    <!-- <ol type="I"> -->
+    <ol type="i">
+        <!-- Ordered List -->
+        <li>List İtem</li>
+        <li>List İtem</li>
+        <li>List İtem</li>
+        <li>List İtem</li>
+    </ol>
+    <ul>
+        <li>Yemekler
+            <ul>
+                <li>Et Yemekleri</li>
+                <li>Sebze Yemekleri</li>
+            </ul>
+        </li>
+        <li>İçecekler</li>
+    </ul>
+    <h3>Video Ses Iframe</h3>
+    <video controls loop autoplay muted width="300" src="assets/video.mp4"></video>
+    <video loop autoplay muted width="300" src="assets/video.mp4"></video>
+    <audio controls loop src="assets/music.mp3"></audio>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12689.888401186749!2d-122.0135585773779!3d37.331330480281984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1str!2str!4v1729498068795!5m2!1str!2str"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EFrCbziHfGQ?si=rjbIc0UEzX8fDBsf"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <form>
+        <input type="text">
+        <input type="date">
+        <input type="password">
+        <input type="email">
+        <input type="file">
+        <input type="hidden">
+        <input type="number">
+        <input type="radio">
+        <input required type="checkbox">
+        <input type="url">
+        <input type="image" alt="resim"> <!-- çok kullanışlı değil-->
+        <input type="submit">
+        <input type="search">
+        <input type="week">
+        <input type="time">
+        <input type="month">
+        <input type="range" step="20">
+        <textarea maxlength="5"></textarea>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <label for="ad">Tam Ad:</label>
+            <input id="ad" type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Akademik Bilgiler</legend>
+            <label>Üniversite
+                <input type="text">
+            </label>
+            <select>
+                <option>SDÜ</option>
+                <option>İTÜ</option>
+                <option>ODTÜ</option>
+                <option>IKCU</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Tecrübe Bilgiler</legend>
+            <input placeholder="Firma İsmi" type="text">
+        </fieldset>
+    </form>
+    <div>
+        <p>n.Paragraf</p>
+        <p>n.Paragraf</p>
+        <p>n.Paragraf</p>
+        <p>n.Paragraf</p>
+        <p>n.Paragraf</p>
+    </div>
+    <div class="paragraflar">
+        <p>n.Paragraf</p>
+        <p>n.Paragraf</p>
+        <p>n.Paragraf</p>
+        <p>n.Paragraf</p>
+        <p>n.Paragraf</p>
+    </div>
+    <ul>
+        <li>Box-1</li>
+        <li>Box-2</li>
+        <li>Box-3</li>
+    </ul>
+    <!-- ul>li.list-item*10{Box-$} -->
+    <ul>
+        <li class="list-item">Box-1</li>
+        <li class="list-item">Box-2</li>
+        <li class="list-item">Box-3</li>
+        <li class="list-item">Box-4</li>
+        <li class="list-item">Box-5</li>
+        <li class="list-item">Box-6</li>
+        <li class="list-item">Box-7</li>
+        <li class="list-item">Box-8</li>
+        <li class="list-item">Box-9</li>
+        <li class="list-item">Box-10</li>
+    </ul>
+    <details style="background-color: orange; transition: 1s; width: 50%; border-radius: 10px; margin: auto;">
+        <summary>Biz Kimiz?</summary>
+        <p style="background-color: aqua;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas velit libero eveniet asperiores, deleniti natus quam, non odio minus modi rem! Consectetur nesciunt nobis numquam voluptatibus? Architecto dolores harum quo!
+        </p>
+    </details>
+    <details>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas velit libero eveniet asperiores, deleniti natus quam, non odio minus modi rem! Consectetur nesciunt nobis numquam voluptatibus? Architecto dolores harum quo!
+        </p>
+    </details>
+    
+</body>
+
+</html>

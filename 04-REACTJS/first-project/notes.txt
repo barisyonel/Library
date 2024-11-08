@@ -1,0 +1,7 @@
+1- "npm create vite@latest projeAdi" projenin oluşturulması
+    =>React
+    =>JavaScript
+2- oluşturulan klasörün içinde terminale node_modules klasörünün krulması için;
+"npm i" yazılır.
+3- projeyi ayağa kaldırmak için "npm run dev" yazılır. proje default olarak 
+http://localhost:5173/ portunda çalıştırılır.

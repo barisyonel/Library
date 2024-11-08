@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .container {
+            width: 450px;
+            height: 450px;
+            border: 2px solid saddlebrown;
+            margin: 120px auto;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        /* position:static;(default)*/
+        /* her verilen pozisyon yeni bir katman oluşturur.katman hiyerarşise htmk yazılış sırasına göre default belirlenir. */
+        .box-2{
+            position: relative;
+            /* relative göreceli konum demektir.orj noktası olarak ilk konumunun sol üst köşesini alır. ilk konumunda hayalet izini bırakır diğer yapılar yerini doldurmaz.*/
+            top: 0;
+            left: 50px;
+            z-index: 1;
+        }
+        .box-3{
+            position: absolute;
+            /* absolute mutlak konum demektir. default olarak orj noktası sayfanın sol üst köşesidir. ilk konumunda izini bırakmaz altındaki yapılar yerini doldurur. absolute pozisyonu parent elementlerinin pozisyonunu kontrol eder. Eğer parent elementte relative rastlarsa; relative olan elementin sol üst köşesini referans olarak alır. */
+            top: 30px;
+            left: 50px;
+        }
+        .box-4{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            /* z-index: -1; */
+        }
+        .box-1{
+            position: sticky;
+            top: 80px;
+            z-index: 2;
+        }
+        .container{
+            position: relative;
+            margin-bottom: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: lightblue;" class="box box-1"></div>
+        <div style="background-color: lightcoral;" class="box box-2"></div>
+        <div style="background-color: lightgreen;" class="box box-3"></div>
+        <div style="background-color: #b8870b;" class="box box-4"></div>
+    </div>
+</body>
+</html>

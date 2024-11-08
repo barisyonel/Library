@@ -1,0 +1,38 @@
+.search-bar{
+    background: #1E3E62;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .categories{
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        li{
+            list-style: none;
+            transition: .5s;
+            cursor: pointer;
+            &:hover{
+                color: #FF6500;
+                text-decoration: underline;
+                transform: scale(1.2);
+            } 
+        }
+    }
+    .input{
+        input{
+            padding: 5px 10px;
+            padding-left: 25px;
+            border-radius: 5px;
+            border: 1px solid #FF6500;
+        }
+        position: relative;
+        .scope{
+            position: absolute;
+            z-index: 1;
+            left: 5px;
+            top: 5px;
+            color: #FF6500;
+        }
+    }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #1c1c1c;
+            color: whitesmoke;
+        }
+        .container{
+            background-color: #1251c7;
+            padding: 10px;
+        }
+        .box{
+            background-color: lightsalmon;
+            padding: 30px;
+            margin: 30px;
+            text-align: center;
+            font-family: monospace;
+            font-size: 24px;
+            font-weight: bolder;
+            border-radius: 5px;
+        }
+        .flex-direction{
+            display: flex;
+            flex-direction: row;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+        }
+        .flex-wrap{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+        }
+        .flex-flow{
+            display: flex;
+            height: 500px;
+            flex-flow: wrap row;
+            flex-flow: wrap column;
+            flex-flow: wrap-reverse column-reverse;
+            flex-flow: wrap-reverse row-reverse;
+        }
+        .flex-justifyContent{
+            display: flex;
+            justify-content: start;
+            justify-content: end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: space-between;
+        }
+        .flex-alignItems{
+            height: 600px;
+            display: flex;
+            align-items: start;
+            align-items: end;
+            align-items: center;
+        }
+        .flex-alignContent{
+            display: flex;
+            flex-wrap: wrap;
+            height: 800px;
+            align-items: center;
+            align-content: space-around;
+            align-content: space-evenly;
+            align-content: space-between;
+            align-content: start;
+            align-content: end;
+            align-content: center;
+        }
+        .flex-gap .box{
+            margin: 0;
+        }
+        .flex-gap{
+            display: flex;
+            flex-wrap: wrap;
+            /* row-gap: 10px;
+            column-gap: 20px; */
+            /* gap: 20px 40px; */
+            gap: 60px;
+        }
+        .flex-test .box{
+            margin: 0;
+        }
+        .flex-test{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 800px;
+            /* align-items: center;
+            justify-content: center;
+            align-content: center; */
+            flex-direction: column;
+            align-items: start ;
+            align-items: end ;
+            align-items: center ;
+            justify-content: center; 
+        }
+        .flex-order{
+            display: flex;
+        }
+        .flex-order .box-3{
+            order: -1;
+        }
+        .flex-order .box-1{
+            order: 1;
+        }
+        .flex-grow{
+            display: flex;
+            /* grow flex itemların büyüyebilme hızı özelliğidir. Default olarak 0 yani inaktif gelir.*/
+        }
+        .flex-grow .box-1{
+            flex-grow: 1;
+        }
+        .flex-grow .box-2{
+            flex-grow: 2;
+        }
+        .flex-shrink{
+            display: flex;
+            /* shrink flex itemların küçülebilme özelliğidir. default olarak 1 yani aktif gelir 0 değeri verilirse kapatılır. basisle beraber kullanılır. */
+        }
+        .flex-shrink .box{
+            flex-grow: 1
+        }
+        .flex-shrink .box-2{
+            flex-shrink: 0;
+        }
+        .flex-basis{
+            display: flex;
+        }
+        .flex-basis .box-1{
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 300px;
+        }
+        .flex .box{
+            margin: 0;
+        }
+        .flex{
+            display: flex;
+            height: 600px;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 10px;
+        }
+        .flex .box-2{
+            /* flex: grow shrink basis; */
+            flex: 1 0 400px;
+        }
+        .flex .box-1{
+            align-self: start;
+        }
+        .flex .box-3{
+            align-self: end;
+        }
+    </style>
+</head>
+<body>
+    <h2>Parent Properties</h2>
+    <h3>Flex-Direction</h3>
+    <div class="container flex-direction">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+    </div>
+    <h3>Flex-Wrap</h3>
+    <div class="container flex-wrap">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <div class="box">BOX-4</div>
+        <div class="box">BOX-5</div>
+        <div class="box">BOX-6</div>
+        <div class="box">BOX-7</div>
+    </div>
+    <h3>Flex-Flow</h3>
+    <div class="container flex-flow">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <div class="box">BOX-4</div>
+        <div class="box">BOX-5</div>
+        <div class="box">BOX-6</div>
+        <div class="box">BOX-7</div>
+    </div>
+    <h3>Flex-JustifyContent</h3>
+    <div class="container flex-justifyContent">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+    </div>
+    <h3>Flex-AlignItems</h3>
+    <div class="container flex-alignItems">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+    </div>
+    <h3>Flex-AlignContent</h3>
+    <div class="container flex-alignContent">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <div class="box">BOX-4</div>
+        <div class="box">BOX-5</div>
+        <div class="box">BOX-6</div>
+        <div class="box">BOX-7</div>
+        <div class="box">BOX-8</div>
+        <div class="box">BOX-9</div>
+    </div>
+    <h3>Flex-Gap</h3>
+    <div class="container flex-gap">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <div class="box">BOX-4</div>
+        <div class="box">BOX-5</div>
+        <div class="box">BOX-6</div>
+        <div class="box">BOX-7</div>
+        <div class="box">BOX-8</div>
+        <div class="box">BOX-9</div>
+    </div>
+    <h3>Flex-TEST</h3>
+    <div class="container flex-test">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div class="box">BOX-3</div>
+        <!-- <div class="box">BOX-4</div>
+        <div class="box">BOX-5</div>
+        <div class="box">BOX-6</div>
+        <div class="box">BOX-7</div>
+        <div class="box">BOX-8</div>
+        <div class="box">BOX-9</div> -->
+    </div>
+    <h2>Child Properties</h2>
+    <h3>Flex-Order</h3>
+    <div class="container flex-order">
+        <div class="box box-1">BOX-1</div>
+        <div class="box box-2">BOX-2</div>
+        <div class="box box-3">BOX-3</div>
+        <div class="box box-4">BOX-4</div>
+    </div>
+    <h3>Flex-Grow</h3>
+    <div class="container flex-grow">
+        <div class="box box-1">BOX-1</div>
+        <div class="box box-2">BOX-2</div>
+        <div class="box box-3">BOX-3</div>
+    </div>
+    <h3>Flex-Shrink</h3>
+    <div class="container flex-shrink">
+        <div class="box box-1">BOX-1</div>
+        <div class="box box-2">BOX-2</div>
+        <div class="box box-3">BOX-3</div>
+    </div>
+    <h3>Flex-Basis</h3>
+    <div class="container flex-basis">
+        <div class="box box-1">BOX-1</div>
+        <div class="box box-2">BOX-2</div>
+        <div class="box box-3">BOX-3</div>
+    </div>
+    <h3>Flex(short)</h3>
+    <div class="container flex">
+        <div class="box box-1">BOX-1</div>
+        <div class="box box-2">BOX-2</div>
+        <div class="box box-3">BOX-3</div>
+    </div>
+</body>
+</html>

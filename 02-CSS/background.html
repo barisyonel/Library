@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body{
+            /* background-color: black;
+            background-image: url("https://cdn.pixabay.com/photo/2024/05/29/16/49/lizard-8796682_1280.jpg");
+            background-repeat: repeat;
+            background-repeat: no-repeat;
+            background-position: 100px 500px;
+            background-position: 20% 40%;
+            background-position: left bottom;
+            background-position: center;
+            background-size: contain;
+            background-size: cover;
+            background-attachment: scroll;
+            background-attachment: fixed; */
+            background: black;
+            background: url("https://cdn.pixabay.com/photo/2024/05/29/16/49/lizard-8796682_1280.jpg") no-repeat center/cover fixed;
+        }
+        html,body{
+            height: 100%;
+            margin: 0;
+            font-size: 18px;
+            color: white;
+        }
+        .card{
+            width: 300px;
+            height: 150px;
+            border: 1px solid grey;
+            text-align: center;
+            font-family: monospace;
+            border-radius: 10px;
+            box-shadow: 0 0 20px orangered;
+            background-color: #80808088;
+            background: url("https://cdn.pixabay.com/photo/2018/01/05/12/41/pebbles-3062831_1280.jpg") no-repeat center/cover;
+        }
+        .container{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card-2{
+            width: 300px;
+            height: 150px;
+            border: 1px solid grey;
+            text-align: center;
+            font-family: monospace;
+            border-radius: 10px;
+            box-shadow: 0 0 20px orangered;
+            background-color: #80808088;
+            /* background: linear-gradient(to right,red,blue) ; */
+            /* background: linear-gradient(to right,#ff000096,#0000ff8e),url("https://cdn.pixabay.com/photo/2018/01/05/12/41/pebbles-3062831_1280.jpg") no-repeat center/cover; */
+            background: linear-gradient(to right,#0000006e,#00000050),url("https://cdn.pixabay.com/photo/2018/01/05/12/41/pebbles-3062831_1280.jpg") no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div data-aos-duration="3000"  data-aos="zoom-in" class="card">
+            <h3>BilgeAdam Akademi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatibus.</p>
+        </div>
+        <div data-aos-duration="3000"  data-aos="zoom-in" class="card">
+            <h3>BilgeAdam Akademi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatibus.</p>
+        </div>
+        <div data-aos-duration="3000"  data-aos="zoom-in" class="card-2">
+            <h3>BilgeAdam Akademi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatibus.</p>
+        </div>
+        
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

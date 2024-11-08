@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            margin-left: 0;
+        }
+        div{
+            width: 60px;
+            height: 60px;
+            border: 2px solid red;
+            border-radius: 0 8px 8px 0;
+            background-color: #575555;
+            margin-bottom: 2px;
+            cursor: pointer;
+            /* transition-delay: 1s; */
+            /* transition-duration: 1s; */
+            /* transition-property: all; */
+            /* transition-property: width,border; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-timing-function: cubic-bezier(0,1.38,1,-0.59); */
+            transition: .6s .3s cubic-bezier(0,1.38,1,-0.59) all;
+        }
+        div:hover{
+            width: 250px;
+            border: 2px solid greenyellow;
+            background-color:#a7a3a3 ;
+            border-radius: 0 10px 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

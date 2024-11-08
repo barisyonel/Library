@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyg</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: 2s;
+        }
+        body{
+            text-align: center;
+            font-family: monospace;
+            padding: 20px;
+        }
+        input{
+            display: block;
+            margin: 10px auto;
+        }
+        .box{
+            border: 1px solid black;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h3>Keyboard Event Uygulaması</h3>
+    <input type="text" placeholder="width(px)">
+    <input type="text" placeholder="height(px)">
+    <input type="text" placeholder="box background">
+    <input type="color">
+    <p>Alan:</p>
+    <div class="box"></div>
+    
+    <script>
+        let width = document.querySelectorAll("input")[0];
+        let height = document.querySelectorAll("input")[1];
+        let background = document.querySelectorAll("input")[2];
+        let bodyBackground = document.querySelectorAll("input")[3];
+        let area = document.querySelector("p");
+        let box = document.querySelector("div");
+        let body = document.querySelector("body")
+
+        width.addEventListener("keyup",()=>{
+            gen = width.value;
+            yuk = height.value;
+            box.style.width = gen+"px"; 
+            area.textContent= "Alan:"+yuk*gen+"px2";
+        });
+        height.addEventListener("keyup",()=>{
+            yuk = height.value;
+            gen = width.value;
+            box.style.height = yuk+"px";
+            area.textContent= "Alan:"+yuk*gen+"px2";
+        });
+        background.addEventListener("keyup",()=>{
+            arka = background.value;
+            box.style.background = arka;
+        });
+        bodyBackground.addEventListener("change",()=>{
+            arka = bodyBackground.value;
+            body.style.background = arka;
+        });
+
+        //VKI Hesabı
+        //Kullanıcıdan boy,kilo,yaş,cinsiyet
+        //VKI = kilo/(boy/100)**2
+        //18,5 düşükse zayıf
+        //18,5 ile 24,9 arası normal
+        //25 ile 29,9 arası kilolu
+        //30 ile 34,9 arası obez
+        //35 üstü ise aşırı obez
+        //VKI değeriniz = ??? ve bu değerlere göre kilolusunuz/zayıfsınız.
+
+    </script>
+</body>
+</html>

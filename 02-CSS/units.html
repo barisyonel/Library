@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        /* 
+        sabit birimler
+        1px = 0.026cm
+        1cm = 37.8px
+        1in = 2.54cm = 96.12px
+        1pt = 1/72in
+        1pc = 12pt
+        göreceli birimler
+        %,vh,vw,rem,em
+        */
+        div{
+            background-color: orangered;
+            width: 100%;
+        }
+        p.first{
+            /* font-size: 3vh; */
+            /* font-size: 3vw; */
+            font-size: 10px;
+        }
+        .em{
+            /* em birimi ata(parent) elementin değerine göre oransal bir değer alır. */
+            color: greenyellow;
+            font-size: 2em;
+        }
+        p.second{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        html{
+            font-size: 20px;
+        }
+        .rem{
+            /* rem birimi root(kök) değerine göre oransal bir değer alır. */
+            color: whitesmoke;
+            font-size: 2rem;
+        }
+        body{
+            background-color: black;
+            color: wheat;
+        }
+        /* reset css */
+        *{
+            box-sizing: border-box;
+            /* margin: 0;
+            padding: 0; */
+        }
+       html,body{
+             margin: 0;
+            padding: 0;
+        }
+        .square{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            border: 10px solid white;
+            padding: 10px;
+            font-size: 0.5rem;
+        }
+        p{
+            margin-top: 0;
+        }
+        .second{
+            padding-left: 10px;
+        }
+        ul{
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BilgeAdam Akademi</h1>
+    <h5>Boost Yıldız Yazılımcı Yetiştirme Programı</h5>
+    <div>
+        <p class="first">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex unde est dolorum tempora <span class="em">suscipit ipsa ab</span> . Odio, nostrum. Et itaque odio optio dolore totam facilis sapiente quidem laudantium obcaecati.
+        </p>
+    </div>
+    <div>
+        <p class="second">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex unde est dolorum tempora <span class="rem">suscipit ipsa ab</span> . Odio, nostrum. Et itaque odio optio dolore totam facilis sapiente quidem laudantium obcaecati.
+        </p>
+    </div>
+    <ul>
+        <li>Box-1</li>
+        <li>Box-2</li>
+        <li>Box-3</li>
+        <li>Box-4</li>
+        <li>Box-5</li>
+        <li>Box-6</li>
+    </ul>
+    <div class="square">BilgeAdam Akademi</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS INTRO</title>
+    <style>
+        h4{
+            color: green;
+        }
+        #list-item-1{
+            background-color: orangered;
+        }
+        .list-item{
+            background-color: lightgoldenrodyellow;
+        }
+        /* .container .liste{
+            container classlı yapı içerisindeki liste classlı yapıyı seçer!
+        } */
+
+        /* p.first{
+            p etiketlerinden classı first olanı seçer
+        } */
+
+        /* b{
+            color: red;
+        } */
+        /* .first b {
+            color: black;
+        } */
+         /* div p b{
+            color: red;
+         } */
+        .container>b{
+            color: greenyellow;
+        }
+        ul li{
+            color: violet;
+        }
+        ul li:first-child{
+            color: aqua;
+        }
+        ul li:last-child{
+            color: darkblue;
+        }
+        ul li:nth-child(2){
+            color: orange;
+        }
+        ul li:nth-child(3){
+            color: black;
+        }
+        ul li:nth-child(odd){
+            color: green;
+        }
+        ul li:nth-child(even){
+            color: orangered;
+        }
+        ul li:nth-child(3n+1){
+            color: goldenrod;
+        }
+        /* .pseudo::first-line{
+            color: aqua;
+        }
+        .pseudo::first-letter{
+            color: red;
+            font-size: 30px;
+            background-color: black;
+        } */
+         .pseudo::before{
+            content: "Start-";
+            color: red;
+         }
+         .pseudo::after{
+            content: "-End";
+            color: blueviolet;
+         }
+         ::marker{
+            content: "\26A1";
+         }
+         a:active{
+            color: pink;
+         }
+         a:link{
+            color: orangered;
+         }
+         a:visited{
+            color: greenyellow;
+         }
+         a:hover{
+            background-color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 style="color: red;">🗽Inline CSS &#128509;</h3>
+    <h4>Internal CSS</h4>
+    <h5>External CSS</h5>
+    <ul>
+        <li id="list-item-1">box-1</li>
+        <li class="list-item">box-2</li>
+        <li class="list-item">box-3</li>
+        <li class="list-item">box-4</li>
+        <li class="list-item">box-5</li>
+        <li id="list-item-2">box-6</li>
+    </ul>
+    <div class="container">
+        <p class="first">Lorem ipsum <b>dolor</b> sit.</p>
+        <p class="second">Lorem ipsum dolor sit.</p>
+        <b>BilgeAdam</b>
+    </div>
+    <p class="pseudo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tenetur voluptates pariatur eligendi repellendus in rem officiis, eveniet cum, repudiandae accusantium, exercitationem aliquam earum hic cupiditate! Exercitationem, ullam ratione. Reiciendis.
+    </p>
+    <a href="#">Hello World</a>
+</body>
+</html>

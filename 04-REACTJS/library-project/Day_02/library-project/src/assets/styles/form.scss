@@ -1,0 +1,41 @@
+form{
+    border:2px solid #ff660080;
+    box-shadow: 0 0 20px #1E3E62;
+    margin: 30px auto;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 40px;
+    position: relative;
+    input,select,button,textarea{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #0B192C;
+        font-family: "Rubik", sans-serif;
+        // outline: 2px solid greenyellow;
+    }
+    textarea{
+        height: 150px;
+    }
+    input[type='submit']{
+        width: 100px;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        border: 1px solid #FF6500;
+        color: #FF6500 ;
+        background: transparent;
+        transition: .7s;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+            &:hover{
+            border: 1px solid #48ff00;
+            color: #48ff00 ;
+            background: transparent;
+            }
+    }
+}

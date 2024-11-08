@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        p,span{
+            background-color: lightblue;
+            margin-left: 10px;
+            margin-right: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+        span{
+            display: block;
+        }
+        /*p{
+             display: inline; 
+        }*/
+        b{
+            background-color: gold;
+            padding: 5px;
+            width: 140px;
+            height: 30px;
+            display: inline-block;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background: #1c1c1c;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            display: inline;
+            margin-inline: 10px;
+            
+        }
+        nav ul li a{
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: monospace;
+            transition: .6s;
+            display: inline-block;
+        }
+        nav ul li a:hover{
+            color: orangered;
+            transform: scale(1.2);
+           
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h3>Block-Level</h3>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos animi <b>impedit cupiditate</b> voluptas, provident molestiae sequi velit tenetur assumenda ut eum aspernatur eligendi quos dolorem, unde molestias temporibus dolore officia!
+    </p>
+    <h3>Inline Level</h3>
+    <span>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos animi impedit cupiditate voluptas, provident molestiae sequi velit tenetur assumenda ut eum aspernatur eligendi quos dolorem, unde molestias temporibus dolore officia!
+    </span>
+    <i>SON SON</i>
+</body>
+</html>

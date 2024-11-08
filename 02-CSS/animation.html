@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: orangered;
+            /* animation-name: first; */
+            /* animation-delay: 1s; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 2; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: ease-in-out;
+            animation-direction: normal;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: backwards;
+            animation-fill-mode: forwards; */
+            /* animation: first 2s infinite alternate; */
+            animation: move 6s infinite;
+            position: relative;
+        }
+        @keyframes first{
+            from{
+                background-color: greenyellow;
+            }
+            to{
+                background-color: blue;
+            }
+        }
+        @keyframes move {
+            0%{
+                top: 0;
+                left: 0;
+                background-color: blue;
+            }
+            25%{
+                top: 0;
+                left: 300px;
+                background-color: orange;
+            }
+            50%{
+                top: 300px;
+                left: 300px;
+                background-color: hotpink;
+            }
+            75%{
+                top: 300px;
+                left: 0;
+                background-color: #87ff69;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                background-color: grey;
+            }     
+        }
+        h3{
+            text-align: center;
+            font-size: 30px;
+        }
+        span{
+            animation-name: fade;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes fade{
+            from{
+                /* opacity: 0; */
+                color: black;
+            }
+            to{
+                /* opacity: 1; */
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>BilgeAdam <span>Boost</span></h3>
+    <div></div>
+</body>
+</html>
